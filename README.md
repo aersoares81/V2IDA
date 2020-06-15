@@ -30,7 +30,7 @@ As default the tools should be in path. As an alternative, the pre-compiled file
 ```
 ./v2ida.sh id ref pair-end initial final parts
 ```
-**id** is the name of a [.tab](https://github.com/aandradebio/V2IDA/blob/master/samples.tab) file containing sample name, r1.fastq file and r2.fastq file in the same line. Other samples should be placed in the next lines. One sample per line; 
+**id** is the name of a [.tab](https://github.com/aandradebio/V2IDA/blob/master/samples.tab) separated file. The file should be formatted in the following format: Each line will contain the information for a single sample. It should have a sample_name and the forward and reverse reads files with full path. The sample_name and the path to the reads should be separated by a tab.
 
 **ref** is the reference genome used for alignment (default: fasta format)
 
